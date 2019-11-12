@@ -13,16 +13,17 @@ class Product:
 
     def stealability(self):
         """
-        Determines how steable an Product is based on it's price / weight ratio.
+        Determines how steable an Product is based on it's price / weight
+        ratio.
 
         Returns:
             string -- how stealable a Product is.
         """
-        priceWeightRatio = self.price / self.weight
+        price_weight_ratio = self.price / self.weight
 
-        if priceWeightRatio < 0.5:
+        if price_weight_ratio < 0.5:
             return "Not so stealable..."
-        elif 0.5 <= priceWeightRatio < 1.0:
+        elif 0.5 <= price_weight_ratio < 1.0:
             return "Kinda stealable."
         else:
             return "Very stealable!"
@@ -34,11 +35,11 @@ class Product:
             string -- explosion level
         """
 
-        flammabilityTimeWeight = self.flammability * self.weight
+        flammability_time_weight = self.flammability * self.weight
 
-        if flammabilityTimeWeight < 10:
+        if flammability_time_weight < 10:
             return "...fizzle"
-        elif 10 <= flammabilityTimeWeight < 50:
+        elif 10 <= flammability_time_weight < 50:
             return "...boom!"
         else:
             return "...BABOOM!!"
@@ -63,7 +64,8 @@ class BoxingGlove(Product):
 
     def punch(self):
         """
-        Hit someone with the glove, and get their reaction based on the weight of the glove.
+        Hit someone with the glove, and get their reaction based on the
+        weight of the glove.
 
         Returns:
             string -- victims reaction
