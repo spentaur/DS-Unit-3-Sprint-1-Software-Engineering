@@ -1,4 +1,4 @@
-from random import randint, sample, uniform, choice
+from random import randint, uniform, choice
 from acme import Product
 
 # Useful to use with random.sample to generate names
