@@ -39,7 +39,7 @@ def inventory_report(products):
         flammability_total += product.flammability
         product_names.add(product.name)
 
-    print("ACME CORPORATION OFFICAL INVENTORY REPORT")
+    print("ACME CORPORATION OFFICIAL INVENTORY REPORT")
     print("Unique product names: ", len(product_names))
     print("Average price: ", prices_total / num_of_products)
     print("Average weight: ", weights_total / num_of_products)
